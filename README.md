@@ -1,2 +1,2 @@
 The link of site
-https://magenta-jenni-2.tiiny.site/
+https://sapphire-magdalen-36.tiiny.site/
