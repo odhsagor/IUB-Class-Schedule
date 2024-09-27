@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class Schedule Creator</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            background-color: #b4cbde;
             text-align: center;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #4A90E2;
+            background-color: #79000a;
             padding: 20px;
             color: white;
             font-size: 2em;
+        }
+        footer {
+            background-color: #ac7bc9;
+            padding: 20px;
+            color: white;
+            font-size: 1em;
+            text-align: center;
+            margin-top: 10px; 
+            width: 100%;
         }
         .text-area {
             margin-top: 30px;
@@ -35,7 +44,7 @@
         }
         .buttons button {
             padding: 10px 20px;
-            background-color: #4A90E2;
+            background-color: #79000a;
             color: white;
             border: none;
             border-radius: 5px;
@@ -53,28 +62,28 @@
             border-collapse: collapse;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             border-radius: 8px; 
-            overflow: hidden; 
+            overflow: hidden;
         }
 
         table th, table td {
             border: 1px solid #ddd;
             padding: 12px;
             text-align: center;
-            font-size: 1.1em; 
+            font-size: 1.1em;
         }
 
         table th {
-            background-color: #007BFF; 
+            background-color: #79000a;
             color: white;
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 1px;
-            border: none; 
+            border: none;
         }
 
         table tr {
-            background-color: #fff; 
-            transition: all 0.3s ease; 
+            background-color: #fff;
+            transition: all 0.3s ease;
         }
 
         table tr:nth-child(even) {
@@ -82,25 +91,24 @@
         }
 
         table tr:hover {
-            background-color: #ffe7a3; 
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
-            transform: translateY(-3px); 
+            background-color: #ffe7a3;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transform: translateY(-3px);
         }
 
-
         table td {
-            border: none; 
+            border: none;
             border-bottom: 1px solid #ddd;
             border-right: 1px solid #ddd;
         }
 
         tfoot td {
-            background-color: #4A90E2;
+            background-color: #79000a;
             color: white;
             font-weight: bold;
             padding: 12px;
             text-align: center;
-            border-radius: 0 0 8px 8px; 
+            border-radius: 0 0 8px 8px;
         }
 
         .editable-title-container {
@@ -129,6 +137,7 @@
 </head>
 <body>
     <header>
+        <img src="iub.png" alt="Logo" class="logo">
         Welcome to IUB Class Schedule Creator
     </header>
     <div class="text-area">
@@ -142,8 +151,8 @@
 
     <div class="schedule-table" id="scheduleTableContainer">
         <div class="editable-title-container">
+            <img src="iub.png" alt="Logo" class="logo">
             <div class="editable-title" id="editableTitle" onclick="editTitle()">My Schedule</div>
-            <img src="iub.png" alt="Logo" class="logo"> 
         </div>
         <table id="scheduleTable">
             <thead>
@@ -167,6 +176,10 @@
             </tfoot>
         </table>
     </div>
+
+    <footer>
+        © 2024 All rights reserved. | Designed by OBIDUL HUQ SAGOR
+    </footer>
 
     <script>
         function generateSchedule() {
