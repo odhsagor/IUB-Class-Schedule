@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Schedule Creator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="iub.png" alt="Logo" class="logo">
+        Welcome to IUB Class Schedule Creator
+    </header>
+
+    <div class="text-area">
+        <textarea id="scheduleData" placeholder="Paste your schedule data here..."></textarea>
+    </div>
+
+    <div class="buttons">
+        <button onclick="generateSchedule()">Create</button>
+        <button onclick="downloadSchedule()">Download</button>
+        <button onclick="changeTableStyle()">Change Table Style</button>
+        <input type="color" id="colorPicker" onchange="changeTableColor()" title="Change Table Color">
+    </div>
+
+    <div class="schedule-table" id="scheduleTableContainer">
+        <div class="editable-title-container">
+            <img src="iub.png" alt="Logo" class="logo">
+            <div class="editable-title" id="editableTitle" onclick="editTitle()">My Schedule</div>
+        </div>
+
+        <table id="scheduleTable">
+            <thead>
+                <tr>
+                    <th>Course (Code & Name)</th>
+                    <th>Section</th>
+                    <th>Room & Time</th>
+                </tr>
+            </thead>            
+            <tbody></tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total Courses: <span id="totalCourses">0</span></td> 
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <footer>
+        © 2024 All rights reserved. | Designed by OBIDUL HUQ SAGOR
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

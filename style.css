@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b4cbde;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #79000a;
+    padding: 20px;
+    color: white;
+    font-size: 2em;
+}
+footer {
+    background-color: #ac7bc9;
+    padding: 20px;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+}
+.text-area {
+    margin-top: 30px;
+}
+.text-area textarea {
+    width: 80%;
+    height: 100px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 1em;
+}
+.buttons {
+    margin-top: 20px;
+}
+.buttons button {
+    padding: 10px 20px;
+    background-color: #79000a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin: 10px;
+}
+.buttons input[type="color"] {
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.schedule-table {
+    margin-top: 30px;
+    display: none;
+}
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    font-size: 1.1em;
+}
+table th {
+    background-color: #79000a;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+}
+table tr:nth-child(even) {
+    background-color: #e9f5ff;
+}
+table tr:hover {
+    background-color: #ffe7a3;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+}
+tfoot td {
+    background-color: #79000a;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    text-align: center;
+}
+.editable-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.editable-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.alternate-style table {
+    border-radius: 15px;
+    overflow: hidden;
+}
+.logo {
+    width: 30px;  /* Reduced the size of the logo */
+    height: 30px; 
+}

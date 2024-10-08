@@ -1,2 +1,2 @@
 The link of site
-https://sapphire-magdalen-36.tiiny.site/
+https://amethyst-chris-36.tiiny.site/
